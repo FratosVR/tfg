@@ -1,0 +1,8 @@
+# Apply UnityYAMLMerge to all YAML files in the src/tfg directory
+src/tfg/*.unity merge=unityyamlmerge
+src/tfg/*.prefab merge=unityyamlmerge
+src/tfg/*.asset merge=unityyamlmerge
+src/tfg/*.mat merge=unityyamlmerge
+src/tfg/*.meta merge=unityyamlmerge
+
+# You can add more file types as needed for Unity
