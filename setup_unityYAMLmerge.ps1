@@ -1,0 +1,2 @@
+git config --global merge.unityyamlmerge.name "Unity Smart Merge"
+git config --global merge.unityyamlmerge.driver "C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.45f1\\\Editor\\\Data\\\Tools\\UnityYAMLMerge merge -p %O %A %B %L"
