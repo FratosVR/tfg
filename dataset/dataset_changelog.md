@@ -5,3 +5,4 @@
 - Dataset empezado
 - 26 animaciones "dance"
 - 6 animaciones "greeting"
+- 24 animaciones "fight"
