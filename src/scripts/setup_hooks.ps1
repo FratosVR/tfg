@@ -15,21 +15,21 @@ $prePushContent = @"
 #!/usr/bin/env pwsh
 # PowerShell script to compress 'dataset' folder before pushing
 
-\$datasetDir = "dataset"
-\$zipFile = "dataset.zip"
+`$datasetDir = "dataset"
+`$zipFile = "dataset.zip"
 
-if (Test-Path \$datasetDir) {
-    Write-Host "Compressing \$datasetDir to \$zipFile..."
-    if (Test-Path \$zipFile) {
-        Remove-Item \$zipFile
+if (Test-Path `$datasetDir) {
+    Write-Host "Compressing `$datasetDir to `$zipFile..."
+    if (Test-Path `$zipFile) {
+        Remove-Item `$zipFile
     }
-    Compress-Archive -Path \$datasetDir -DestinationPath \$zipFile
+    Compress-Archive -Path `$datasetDir -DestinationPath `$zipFile
     Write-Host "Compression complete."
 
     # Stage the zip file for the commit
-    git add \$zipFile
+    git add `$zipFile
 } else {
-    Write-Host "\$datasetDir folder not found."
+    Write-Host "`$datasetDir folder not found."
 }
 "@
 
@@ -38,18 +38,18 @@ $postMergeContent = @"
 #!/usr/bin/env pwsh
 # PowerShell script to decompress 'dataset.zip' after pulling
 
-\$zipFile = "dataset.zip"
-\$datasetDir = "dataset"
+`$zipFile = "dataset.zip"
+`$datasetDir = "dataset"
 
-if (Test-Path \$zipFile) {
-    Write-Host "Unzipping \$zipFile to \$datasetDir..."
-    if (Test-Path \$datasetDir) {
-        Remove-Item -Recurse -Force \$datasetDir
+if (Test-Path `$zipFile) {
+    Write-Host "Unzipping `$zipFile to `$datasetDir..."
+    if (Test-Path `$datasetDir) {
+        Remove-Item -Recurse -Force `$datasetDir
     }
-    Expand-Archive -Path \$zipFile -DestinationPath \$datasetDir
+    Expand-Archive -Path `$zipFile -DestinationPath `$datasetDir
     Write-Host "Unzipping complete."
 } else {
-    Write-Host "\$zipFile not found."
+    Write-Host "`$zipFile not found."
 }
 "@
 
@@ -58,18 +58,18 @@ $postCheckoutContent = @"
 #!/usr/bin/env pwsh
 # PowerShell script to decompress 'dataset.zip' after checkout
 
-\$zipFile = "dataset.zip"
-\$datasetDir = "dataset"
+`$zipFile = "dataset.zip"
+`$datasetDir = "dataset"
 
-if (Test-Path \$zipFile) {
-    Write-Host "Unzipping \$zipFile to \$datasetDir..."
-    if (Test-Path \$datasetDir) {
-        Remove-Item -Recurse -Force \$datasetDir
+if (Test-Path `$zipFile) {
+    Write-Host "Unzipping `$zipFile to `$datasetDir..."
+    if (Test-Path `$datasetDir) {
+        Remove-Item -Recurse -Force `$datasetDir
     }
-    Expand-Archive -Path \$zipFile -DestinationPath \$datasetDir
+    Expand-Archive -Path `$zipFile -DestinationPath `$datasetDir
     Write-Host "Unzipping complete."
 } else {
-    Write-Host "\$zipFile not found."
+    Write-Host "`$zipFile not found."
 }
 "@
 
@@ -89,13 +89,13 @@ function Create-HookFile {
 }
 
 # Create the pre-push, post-merge, and post-checkout hooks
-Create-HookFile "pre-push" $prePushContent
-Create-HookFile "post-merge" $postMergeContent
-Create-HookFile "post-checkout" $postCheckoutContent
+Create-HookFile "pre-push.ps1" $prePushContent
+Create-HookFile "post-merge.ps1" $postMergeContent
+Create-HookFile "post-checkout.ps1" $postCheckoutContent
 
 # Add dataset folder to .gitignore if not already ignored
 $gitIgnorePath = ".gitignore"
-$datasetEntry = "\ndataset/"
+$datasetEntry = "dataset/"
 
 if (-Not (Test-Path $gitIgnorePath)) {
     New-Item -Path $gitIgnorePath -ItemType File
@@ -103,7 +103,7 @@ if (-Not (Test-Path $gitIgnorePath)) {
 
 $gitIgnoreContent = Get-Content $gitIgnorePath
 if ($datasetEntry -notin $gitIgnoreContent) {
-    Add-Content -Path $gitIgnorePath -Value $datasetEntry
+    Add-Content -Path $gitIgnorePath -Value "$datasetEntry`n"
     Write-Host "Added 'dataset/' to .gitignore."
 }
 else {
