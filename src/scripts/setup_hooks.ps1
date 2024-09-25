@@ -36,7 +36,7 @@ $postMergeContent = @"
 # Bash script to decompress 'dataset.zip' after pulling
 
 zip_file="dataset.zip"
-dataset_dir="dataset"
+dataset_dir="."
 
 if [ -f "`$zip_file" ]; then
   echo "Unzipping `$zip_file to `$dataset_dir..."
@@ -56,7 +56,7 @@ $postCheckoutContent = @"
 # Bash script to decompress 'dataset.zip' after checkout
 
 zip_file="dataset.zip"
-dataset_dir="dataset"
+dataset_dir="."
 
 if [ -f "`$zip_file" ]; then
   echo "Unzipping `$zip_file to `$dataset_dir..."
@@ -86,7 +86,7 @@ function Create-HookFile {
 }
 
 # Create the pre-push, post-merge, and post-checkout hooks
-Create-HookFile "pre-push" $prePushContent
+Create-HookFile "pre-commit" $prePushContent
 Create-HookFile "post-merge" $postMergeContent
 Create-HookFile "post-checkout" $postCheckoutContent
 
