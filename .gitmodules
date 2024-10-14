@@ -1,0 +1,3 @@
+[submodule "src/Mixamo-Animation-Dumper"]
+	path = src/Mixamo-Animation-Dumper
+	url = https://github.com/ALK222/Mixamo-Animation-Dumper.git
