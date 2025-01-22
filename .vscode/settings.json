@@ -1,70 +1,70 @@
 {
-    "spellright.language": ["es", "en"],
-    "spellright.documentTypes": [
-      "markdown",
-      "plaintext",
-      "tex",
-      "latex",
-      "rsweave"
-    ],
-    "latex-workshop.latex.recipes": [
-      {
-        "name": "xelatex, makeglossaries, xelatex (2x)",
-        "tools": ["xelatex", "makeglossaries", "xelatex", "xelatex"]
-      },
-      {
-        "name": "xelatex",
-        "tools": ["xelatex"]
-      },
-      {
-        "name": "xelatex, makeglossaries, bibtex, xelatex (2x)",
-        "tools": ["xelatex", "makeglossaries", "bibtex", "xelatex", "xelatex"]
-      },
-      {"name": "TeXis",
-        "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]}
-    ],
-    "latex-workshop.latex.tools": [
-      {
-        "name": "xelatex",
-        "command": "xelatex",
-        "args": ["-file-line-error", "-interaction=nonstopmode", "%DOC%"],
-        "env": {}
-      },
-      {
-        "name": "pdflatex",
-        "command": "pdflatex",
-        "args": ["-f", "%DOC%"]
-      },
-      {
-        "name": "bibtex",
-        "command": "bibtex",
-        "args": ["%DOCFILE%"],
-        "env": {}
-      },
-      {
-        "name": "makeglossaries",
-        "command": "makeglossaries",
-        "args": ["%DOCFILE%"]
-      }
-    ],
-    "spellright.parserByClass": {
-      "rsweave": {
-        "parser": "latex"
-      }
+  "spellright.language": ["es", "en"],
+  "spellright.documentTypes": [
+    "markdown",
+    "plaintext",
+    "tex",
+    "latex",
+    "rsweave"
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "xelatex, makeglossaries, xelatex (2x)",
+      "tools": ["xelatex", "makeglossaries", "xelatex", "xelatex"]
     },
-    "cSpell.words": [
-      "Alsa",
-      "Javi",
-      "Leire",
-      "memorabilidad",
-      "Nápoles",
-      "prototipado",
-      "Renfe",
-      "Restorff",
-      "sobreestimulación"
-    ],
-    "cSpell.language": "en,es-ES,es",
-    "files.exclude": {
-      "**/.git": false
+    {
+      "name": "xelatex",
+      "tools": ["xelatex"]
+    },
+    {
+      "name": "xelatex, makeglossaries, bibtex, xelatex (2x)",
+      "tools": ["xelatex", "makeglossaries", "bibtex", "xelatex", "xelatex"]
+    },
+    { "name": "TeXis", "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"] }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": ["-file-line-error", "-interaction=nonstopmode", "%DOC%"],
+      "env": {}
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": ["-f", "%DOC%"]
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": ["%DOCFILE%"],
+      "env": {}
+    },
+    {
+      "name": "makeglossaries",
+      "command": "makeglossaries",
+      "args": ["%DOCFILE%"]
     }
-  }
+  ],
+  "spellright.parserByClass": {
+    "rsweave": {
+      "parser": "latex"
+    }
+  },
+  "cSpell.words": [
+    "Alsa",
+    "Javi",
+    "Leire",
+    "memorabilidad",
+    "Nápoles",
+    "prototipado",
+    "Renfe",
+    "Restorff",
+    "sobreestimulación"
+  ],
+  "cSpell.language": "en,es-ES,es",
+  "files.exclude": {
+    "**/.git": false
+  },
+  "python.autoComplete.extraPaths": ["./.venv/bin"]
+}
