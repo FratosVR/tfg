@@ -66,5 +66,7 @@
   "files.exclude": {
     "**/.git": false
   },
-  "python.autoComplete.extraPaths": ["./.venv/bin"]
+  "python.analysis.extraPaths": ["./.venv/bin"],
+  "python.autoComplete.extraPaths": ["./.venv/bin"],
+  "vsintellicode.python.completionsEnabled": true
 }
