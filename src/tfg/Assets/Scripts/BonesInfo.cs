@@ -26,7 +26,7 @@ public class BonesInfo
 
     public string ToJSON()
     {
-        string s = "{";
+        string s = "";
 
         foreach (Tuple<string, float> t in _bones) {
             s += $"\"{t.Item1}\":{t.Item2},";
@@ -34,7 +34,6 @@ public class BonesInfo
 
         s = s.Remove(s.Length - 1);
 
-        s += "}";
         return s;
     }
 }

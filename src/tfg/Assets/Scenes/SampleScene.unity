@@ -562,6 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61573f6b84538464ebed3c3252736808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _uri: http://192.168.1.158:8501/v1/models/half_plus_two:predict
   _bones:
   - {fileID: 1741601590}
   - {fileID: 1078489230}

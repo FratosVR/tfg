@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|c:\\users\\pablo\\desktop\\uni\\cuarto\\tfg\\tfg\\src\\tfg\\assets\\scripts\\servermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\servermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|c:\\users\\pablo\\desktop\\uni\\cuarto\\tfg\\tfg\\src\\tfg\\assets\\scripts\\bonesinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bonesinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +39,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServerManager.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\ServerManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ServerManager.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\ServerManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ServerManager.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T15:04:59.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BonesInfo.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\BonesInfo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BonesInfo.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\BonesInfo.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BonesInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T14:41:44.065Z",
+              "EditorCaption": ""
             }
           ]
         }

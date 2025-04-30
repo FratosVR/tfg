@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\servermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|c:\\users\\pablo\\desktop\\uni\\cuarto\\tfg\\tfg\\src\\tfg\\assets\\scripts\\bonesinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\assets\\scripts\\bonesinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bonesinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\ServerManager.cs",
               "ToolTip": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\ServerManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\ServerManager.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAD8AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAQwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T15:04:59.324Z",
               "EditorCaption": ""
@@ -61,7 +61,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\BonesInfo.cs",
               "ToolTip": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\BonesInfo.cs",
               "RelativeToolTip": "Assets\\Scripts\\BonesInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwCIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T14:41:44.065Z",
               "EditorCaption": ""
