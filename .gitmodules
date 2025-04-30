@@ -4,3 +4,6 @@ url = https://github.com/FratosVR/Mixamo-Animation-Dumper.git
 [submodule "src/Models"]
 	path = src/Models
 	url = https://github.com/FratosVR/models
+[submodule "Memoria"]
+	path = Memoria
+	url = https://github.com/FratosVR/Memoria-tfg
