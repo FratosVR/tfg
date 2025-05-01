@@ -1,6 +1,6 @@
+
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -14,13 +14,13 @@ public class ServerManager : MonoBehaviour
     public void SetIP(string ip)
     {
         _IP = ip;
+        PushInfo();
+        StartCoroutine(sendInfo());
     }
 
     private void Start()
     {
         _bonesInfo = new Queue<BonesInfo>(2);
-        PushInfo();
-        StartCoroutine(sendInfo());
     }
 
     private void PushInfo()
