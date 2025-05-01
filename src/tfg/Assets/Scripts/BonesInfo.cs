@@ -14,13 +14,15 @@ public class BonesInfo
 
     public void AddInfo(List<Transform> b)
     {
+        int i = 0;
         foreach (Transform t in b) {
-            _bones.Add(new Tuple<string, float>(t.name + "_posx", t.position.x));
-            _bones.Add(new Tuple<string, float>(t.name + "_posy", t.position.y));
-            _bones.Add(new Tuple<string, float>(t.name + "_posz", t.position.z));
-            _bones.Add(new Tuple<string, float>(t.name + "_rotx", t.rotation.eulerAngles.x));
-            _bones.Add(new Tuple<string, float>(t.name + "_roty", t.rotation.eulerAngles.y));
-            _bones.Add(new Tuple<string, float>(t.name + "_rotz", t.rotation.eulerAngles.z));
+            _bones.Add(new Tuple<string, float>($"feature_{i}" + "_posx", t.position.x));
+            _bones.Add(new Tuple<string, float>($"feature_{i}" + "_posy", t.position.y));
+            _bones.Add(new Tuple<string, float>($"feature_{i}" + "_posz", t.position.z));
+            _bones.Add(new Tuple<string, float>($"feature_{i}" + "_rotx", t.rotation.eulerAngles.x));
+            _bones.Add(new Tuple<string, float>($"feature_{i}" + "_roty", t.rotation.eulerAngles.y));
+            _bones.Add(new Tuple<string, float>($"feature_{i}" + "_rotz", t.rotation.eulerAngles.z));
+            i++;
         }
     }
 

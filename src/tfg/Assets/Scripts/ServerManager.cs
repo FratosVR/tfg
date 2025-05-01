@@ -7,26 +7,21 @@ using UnityEngine.Networking;
 public class ServerManager : MonoBehaviour
 {
     [SerializeField]
-    private string _uri;
-    [SerializeField]
     private List<Transform> _bones;
-    //private List<BonesInfo> _bonesInfo;
     private Queue<BonesInfo> _bonesInfo;
+    private string _IP;
+
+    public void SetIP(string ip)
+    {
+        _IP = ip;
+    }
+
     private void Start()
     {
         _bonesInfo = new Queue<BonesInfo>(2);
         PushInfo();
         StartCoroutine(sendInfo());
     }
-
-    //private void Update()
-    //{
-    //    BonesInfo info = new BonesInfo();
-    //    info.AddInfo(_bones);
-
-    //    Debug.Log(info.ToJSON());
-    //    _bonesInfo.Add(info);
-    //}
 
     private void PushInfo()
     {
@@ -46,7 +41,7 @@ public class ServerManager : MonoBehaviour
         s += "}]}";
         _bonesInfo.Dequeue();
 
-        UnityWebRequest www = UnityWebRequest.Post(_uri, s, "application/json");
+        UnityWebRequest www = UnityWebRequest.Post($"http://{_IP}:8501/v1/models/half_plus_two:predict", s, "application/json");
         yield return www.SendWebRequest();
 
         if(www.result != UnityWebRequest.Result.Success)
@@ -62,20 +57,10 @@ public class ServerManager : MonoBehaviour
         }
     }
 
-    //IEnumerator recieveInfo()
-    //{
-    //    UnityWebRequest www = UnityWebRequest.Get(_uri);
-    //    yield return www.SendWebRequest();
-
-    //    if (www.error != null) {
-    //        Debug.LogError(www.error);
-    //        Application.Quit();
-    //    }
-    //    else
-    //    {
-            
-    //        Debug.Log(www.downloadHandler.text);
-    //        StartCoroutine(recieveInfo());
-    //    }
-    //}
+    public void RetryConnexion()
+    {
+        _bonesInfo.Clear();
+        PushInfo();
+        StartCoroutine(sendInfo());
+    }
 }
