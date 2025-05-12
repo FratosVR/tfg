@@ -17,5 +17,9 @@ public class UIManager : MonoBehaviour
         _sourceManager.address = ip;
     }
 
+    public void SetText(string text)
+    {
+        _text.text = text;
+    }
 
 }

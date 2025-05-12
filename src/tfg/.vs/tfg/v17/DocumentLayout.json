@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|c:\\users\\pablo\\desktop\\uni\\cuarto\\tfg\\tfg\\src\\tfg\\assets\\scripts\\servermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\assets\\scripts\\bonesinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bonesinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\assets\\scripts\\servermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\servermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\assets\\scripts\\bonesinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bonesinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|c:\\users\\pablo\\desktop\\uni\\cuarto\\tfg\\tfg\\src\\tfg\\assets\\scripts\\predictionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\predictionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|c:\\users\\pablo\\desktop\\uni\\cuarto\\tfg\\tfg\\src\\tfg\\assets\\scripts\\predictionutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\predictionutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|c:\\users\\pablo\\desktop\\uni\\cuarto\\tfg\\tfg\\src\\tfg\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{086DFBFE-EFDF-A68E-0271-BDB2D3F1CD11}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,26 +54,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "PredictionManager.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\PredictionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PredictionManager.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\PredictionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PredictionManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:43:19.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:42:41.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PredictionUtility.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\PredictionUtility.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PredictionUtility.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\PredictionUtility.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PredictionUtility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T11:08:32.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ServerManager.cs",
               "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\ServerManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ServerManager.cs",
               "ToolTip": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\ServerManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\ServerManager.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAQwC8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T15:04:59.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BonesInfo.cs",
               "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\BonesInfo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BonesInfo.cs",
               "ToolTip": "C:\\Users\\pablo\\Desktop\\Uni\\Cuarto\\TFG\\tfg\\src\\tfg\\Assets\\Scripts\\BonesInfo.cs",
               "RelativeToolTip": "Assets\\Scripts\\BonesInfo.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAcwCIAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T14:41:44.065Z",
               "EditorCaption": ""

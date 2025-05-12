@@ -21,6 +21,7 @@ public class ServerManager : MonoBehaviour
     private void Start()
     {
         _bonesInfo = new Queue<BonesInfo>(2);
+        SetIP("192.168.1.127");
     }
 
     private void PushInfo()
@@ -34,14 +35,17 @@ public class ServerManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(0.8f);
         PushInfo();
-        string s = "{\"instances\":[{";
+        string s = "{\"instances\": [{";
+        int i = 0;
         foreach (BonesInfo info in _bonesInfo) { 
-            s += info.ToJSON();
+            s += info.ToJSON(i, out i);
+            s += ",";
         }
+        s = s.Remove(s.Length - 1);
         s += "}]}";
+        Debug.Log(s);
         _bonesInfo.Dequeue();
-
-        UnityWebRequest www = UnityWebRequest.Post($"http://{_IP}:8501/v1/models/half_plus_two:predict", s, "application/json");
+        UnityWebRequest www = UnityWebRequest.Post($"http://{_IP}:8501/v1/models/rigardu:predict", s, "application/json");
         yield return www.SendWebRequest();
 
         if(www.result != UnityWebRequest.Result.Success)
