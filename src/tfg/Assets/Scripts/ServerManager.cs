@@ -1,4 +1,5 @@
 
+using Neuron;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,12 +9,26 @@ public class ServerManager : MonoBehaviour
 {
     [SerializeField]
     private List<Transform> _bones;
+    [SerializeField]
+    NeuronSourceManager _sourceManager;
     private Queue<BonesInfo> _bonesInfo;
     private string _IP;
+
+    private static ServerManager _instance;
+    public static ServerManager Instance { get { return _instance; } }
+
+    private void Awake()
+    {
+        if (_instance == null)
+            _instance = this;
+        else
+            Destroy(this);
+    }
 
     public void SetIP(string ip)
     {
         _IP = ip;
+        _sourceManager.address = ip;
         PushInfo();
         StartCoroutine(sendInfo());
     }

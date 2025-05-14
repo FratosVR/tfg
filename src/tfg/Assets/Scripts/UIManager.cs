@@ -6,9 +6,6 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-
-    [SerializeField]
-    NeuronSourceManager _sourceManager;
     [SerializeField]
     TMP_Text _text;
 
@@ -25,7 +22,7 @@ public class UIManager : MonoBehaviour
 
     public void SetIP(string ip)
     {
-        _sourceManager.address = ip;
+        ServerManager.Instance.SetIP(ip);
     }
 
     public void SetText(string text)
