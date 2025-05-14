@@ -12,6 +12,17 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     TMP_Text _text;
 
+    private static UIManager _instance;
+    public static UIManager Instance { get { return _instance; } }
+
+    private void Awake()
+    {
+        if (_instance == null)
+            _instance = this;
+        else
+            Destroy(this);
+    }
+
     public void SetIP(string ip)
     {
         _sourceManager.address = ip;

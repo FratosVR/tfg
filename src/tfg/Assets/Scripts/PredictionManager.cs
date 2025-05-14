@@ -20,6 +20,11 @@ public class PredictionManager : MonoBehaviour
     {
         PredictionUtility pred = new PredictionUtility();
         pred = JsonUtility.FromJson<PredictionUtility>(json);
+        pred.BubbleShort();
+
+        Debug.Log(pred.PredsToText());
+        UIManager.Instance.SetText(pred.PredsToText());
+        AnimationManager.Instance.SetAnimationType(pred.predictions[0].classes[0]);
     }
 
     // Start is called before the first frame update

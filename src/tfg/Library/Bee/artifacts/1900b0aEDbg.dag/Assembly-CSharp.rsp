@@ -391,6 +391,7 @@
 "Assets/Noitom/Scripts/Utilities/BoneRigidbodies.cs"
 "Assets/Noitom/Scripts/Utilities/FPSCounter.cs"
 "Assets/Noitom/Scripts/Utilities/RigidbodyVirtualCinematographyCtrl.cs"
+"Assets/Scripts/AnimationManager.cs"
 "Assets/Scripts/BonesInfo.cs"
 "Assets/Scripts/PredictionManager.cs"
 "Assets/Scripts/PredictionUtility.cs"

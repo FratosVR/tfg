@@ -43,7 +43,6 @@ public class ServerManager : MonoBehaviour
         }
         s = s.Remove(s.Length - 1);
         s += "}]}";
-        Debug.Log(s);
         _bonesInfo.Dequeue();
         UnityWebRequest www = UnityWebRequest.Post($"http://{_IP}:8501/v1/models/rigardu:predict", s, "application/json");
         yield return www.SendWebRequest();
@@ -56,7 +55,7 @@ public class ServerManager : MonoBehaviour
         else
         {
             Debug.Log(www.downloadHandler.text);
-            Debug.Log(www.downloadHandler);
+            PredictionManager.Instance.NewPrediction(www.downloadHandler.text);
             StartCoroutine(sendInfo());
         }
     }

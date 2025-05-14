@@ -66,6 +66,7 @@
     <Compile Include="Assets\Noitom\Scripts\Mocap\NeuronSource.cs" />
     <Compile Include="Assets\Noitom\Scripts\Utilities\AliceMotionBindHelper.cs" />
     <Compile Include="Assets\Noitom\Scripts\Mocap\NeuronHelper.cs" />
+    <Compile Include="Assets\Scripts\AnimationManager.cs" />
     <Compile Include="Assets\Noitom\Scripts\Mocap\NeuronDataReaderManaged.cs" />
     <Compile Include="Assets\Noitom\Scripts\Mocap\MocapApiManager.cs" />
     <Compile Include="Assets\Noitom\Scripts\Utilities\FPSCounter.cs" />
