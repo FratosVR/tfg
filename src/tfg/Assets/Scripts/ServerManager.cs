@@ -5,10 +5,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
+/// <summary>
+/// Component that manage the communication with the server.
+/// </summary>
 public class ServerManager : MonoBehaviour
 {
+    /// <summary>
+    /// List of the bones in the character's mesh with the mocap suit.
+    /// </summary>
     [SerializeField]
     private List<Transform> _bones;
+    /// <summary>
+    /// NeuronSourceManager instance, responsible for communication with Axis Studio.
+    /// </summary>
     [SerializeField]
     NeuronSourceManager _sourceManager;
     private Queue<BonesInfo> _bonesInfo;
@@ -25,6 +34,10 @@ public class ServerManager : MonoBehaviour
             Destroy(this);
     }
 
+    /// <summary>
+    /// Set the IP where the server with the model and Axis Studio are and begins the communication.
+    /// </summary>
+    /// <param name="ip">IP where the server and Axis Studio are.</param>
     public void SetIP(string ip)
     {
         _IP = ip;
@@ -36,9 +49,11 @@ public class ServerManager : MonoBehaviour
     private void Start()
     {
         _bonesInfo = new Queue<BonesInfo>(2);
-        SetIP("192.168.1.127");
     }
 
+    /// <summary>
+    /// Enqueue a new BonesInfo instance.
+    /// </summary>
     private void PushInfo()
     {
         BonesInfo info = new BonesInfo();
@@ -46,6 +61,9 @@ public class ServerManager : MonoBehaviour
         _bonesInfo.Enqueue(info);
     }
 
+    /// <summary>
+    /// Coroutine that handles the connection to the server. It waits a specified amount of time to send the bone information in JSON format and receives the prediction.
+    /// </summary>
     IEnumerator sendInfo()
     {
         yield return new WaitForSecondsRealtime(0.8f);
@@ -64,8 +82,8 @@ public class ServerManager : MonoBehaviour
 
         if(www.result != UnityWebRequest.Result.Success)
         {
-            Debug.LogError(www.error);
-            Application.Quit();
+            UIManager.Instance.SetText("Se ha perdido la conexión. Vuelve a establecer la IP.");
+            _bonesInfo.Clear();
         }
         else
         {
@@ -73,12 +91,5 @@ public class ServerManager : MonoBehaviour
             PredictionManager.Instance.NewPrediction(www.downloadHandler.text);
             StartCoroutine(sendInfo());
         }
-    }
-
-    public void RetryConnexion()
-    {
-        _bonesInfo.Clear();
-        PushInfo();
-        StartCoroutine(sendInfo());
     }
 }

@@ -1,0 +1,65 @@
+\doxysection{Bones\+Info Class Reference}
+\hypertarget{class_bones_info}{}\label{class_bones_info}\index{BonesInfo@{BonesInfo}}
+
+
+Helper class to facilitate the storage of the bones information in order to send it to the server.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_bones_info_a180c84f8092e453e9117037dee48c58f}\label{class_bones_info_a180c84f8092e453e9117037dee48c58f} 
+{\bfseries Bones\+Info} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the class that initializes the Number\+Format\+Info and the list of bones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bones_info_a32b956c170e9d63fc144309b607443ec}{Add\+Info}} (List$<$ Transform $>$ b)
+\begin{DoxyCompactList}\small\item\em Adds the information from the list passed as a parameter to the class list. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_bones_info_a795ddacb997ee24a44a54c45fa615991}{To\+JSON}} (int index, out int last\+Index)
+\begin{DoxyCompactList}\small\item\em Transforms the list of bones into a text string in JSON format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper class to facilitate the storage of the bones information in order to send it to the server. 
+
+\label{doc-func-members}
+\Hypertarget{class_bones_info_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bones_info_a32b956c170e9d63fc144309b607443ec}\index{BonesInfo@{BonesInfo}!AddInfo@{AddInfo}}
+\index{AddInfo@{AddInfo}!BonesInfo@{BonesInfo}}
+\doxysubsubsection{\texorpdfstring{AddInfo()}{AddInfo()}}
+{\footnotesize\ttfamily \label{class_bones_info_a32b956c170e9d63fc144309b607443ec} 
+void Bones\+Info.\+Add\+Info (\begin{DoxyParamCaption}\item[{List$<$ Transform $>$}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the information from the list passed as a parameter to the class list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & List of Transforms to storage.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bones_info_a795ddacb997ee24a44a54c45fa615991}\index{BonesInfo@{BonesInfo}!ToJSON@{ToJSON}}
+\index{ToJSON@{ToJSON}!BonesInfo@{BonesInfo}}
+\doxysubsubsection{\texorpdfstring{ToJSON()}{ToJSON()}}
+{\footnotesize\ttfamily \label{class_bones_info_a795ddacb997ee24a44a54c45fa615991} 
+string Bones\+Info.\+To\+JSON (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{out int}]{last\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Transforms the list of bones into a text string in JSON format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index from where it should start.\\
+\hline
+{\em last\+Index} & Index where it ends as an output parameter. This parameter is required to ensure consistency with the number in the bone names sent to the server when called multiple times in a row.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Text string of bone information in JSON format.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bones\+Info.\+cs\end{DoxyCompactItemize}

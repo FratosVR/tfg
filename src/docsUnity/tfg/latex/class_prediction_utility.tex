@@ -1,0 +1,55 @@
+\doxysection{Prediction\+Utility Class Reference}
+\hypertarget{class_prediction_utility}{}\label{class_prediction_utility}\index{PredictionUtility@{PredictionUtility}}
+
+
+Helper class in order to manage the predictions returned by the server.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_prediction_utility_1_1_prediction}{Prediction}}
+\begin{DoxyCompactList}\small\item\em Struct containing the information returned by the model. These fields must be public for JSONUtility to populate them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_prediction_utility_aa3bc39e8c47401b68b1ba0b5c7e8acbc}\label{class_prediction_utility_aa3bc39e8c47401b68b1ba0b5c7e8acbc} 
+{\bfseries Prediction\+Utility} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the class. Initialize the "{}predictions"{} array at size 1 and the "{}classes"{} and "{}scores"{} array at the size of the number of gestures. \end{DoxyCompactList}\item 
+\Hypertarget{class_prediction_utility_af2fae6a2f0ece85e37e1ae458022299b}\label{class_prediction_utility_af2fae6a2f0ece85e37e1ae458022299b} 
+void {\bfseries Bubble\+Short} ()
+\begin{DoxyCompactList}\small\item\em Bubble Short to order the predictions from highest to lowest depending on the score. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_prediction_utility_a8267f8d1accf204d1fc8899397d6b3c6}{Preds\+To\+Text}} ()
+\begin{DoxyCompactList}\small\item\em Generates a text with the predictions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_prediction_utility_afabf6961036d2aff336a8465837f1b8d}\label{class_prediction_utility_afabf6961036d2aff336a8465837f1b8d} 
+\mbox{\hyperlink{struct_prediction_utility_1_1_prediction}{Prediction}}\mbox{[}$\,$\mbox{]} {\bfseries predictions}
+\begin{DoxyCompactList}\small\item\em \doxylink{struct_prediction_utility_1_1_prediction}{Prediction} returned by the model. It must be an array on size 1 because that is how the model returns the predictions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper class in order to manage the predictions returned by the server. 
+
+\label{doc-func-members}
+\Hypertarget{class_prediction_utility_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_prediction_utility_a8267f8d1accf204d1fc8899397d6b3c6}\index{PredictionUtility@{PredictionUtility}!PredsToText@{PredsToText}}
+\index{PredsToText@{PredsToText}!PredictionUtility@{PredictionUtility}}
+\doxysubsubsection{\texorpdfstring{PredsToText()}{PredsToText()}}
+{\footnotesize\ttfamily \label{class_prediction_utility_a8267f8d1accf204d1fc8899397d6b3c6} 
+string Prediction\+Utility.\+Preds\+To\+Text (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generates a text with the predictions. 
+
+\begin{DoxyReturn}{Returns}
+Text string with predictions in the format "{}\+Class\+Name \+: Score"{}.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Prediction\+Utility.\+cs\end{DoxyCompactItemize}
