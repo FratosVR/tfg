@@ -4,8 +4,14 @@ using Unity.VisualScripting;
 using UnityEditor.Animations;
 using UnityEngine;
 
+/// <summary>
+/// Component that manage the animation of the avatar that reacts to the pedicted gestures.
+/// </summary>
 public class AnimationManager : MonoBehaviour
 {
+    /// <summary>
+    /// Avatar's animator.
+    /// </summary>
     [SerializeField]
     private Animator _controller;
 
@@ -20,8 +26,15 @@ public class AnimationManager : MonoBehaviour
             Destroy(this);
     }
 
+    /// <summary>
+    /// Enumerator with the animations to be executed depending on the predicted gesture.
+    /// </summary>
     private enum GestureType { clap, fight, greeting, lookAt, run, sit, idle }
 
+    /// <summary>
+    /// Sets the response animation to the predicted gesture.
+    /// </summary>
+    /// <param name="pred">Name of the predicted gesture.</param>
     public void SetAnimationType(string pred)
     {
         switch (pred.ToLower()) {
