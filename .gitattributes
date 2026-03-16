@@ -7,5 +7,5 @@ src/tfg/*.meta merge=unityyamlmerge
 
 # You can add more file types as needed for Unity
 
-/docs/* linguist-vendored
+/docs/** linguist-vendored
 
